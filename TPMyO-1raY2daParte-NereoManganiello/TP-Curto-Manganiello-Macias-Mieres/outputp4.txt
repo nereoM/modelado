@@ -1,0 +1,242 @@
+Discos usados: 20
+
+Disco 1: 97048 MB
+  Archivo 0: 933 MB
+  Archivo 1: 933 MB
+  Archivo 2: 933 MB
+  Archivo 3: 933 MB
+  Archivo 4: 933 MB
+  Archivo 5: 933 MB
+  Archivo 6: 933 MB
+  Archivo 7: 933 MB
+  Archivo 8: 933 MB
+  Archivo 9: 933 MB
+  Archivo 10: 933 MB
+  Archivo 11: 933 MB
+  Archivo 12: 933 MB
+  Archivo 13: 1251 MB
+  Archivo 14: 1251 MB
+  Archivo 15: 1251 MB
+  Archivo 16: 1251 MB
+  Archivo 17: 1251 MB
+  Archivo 18: 1251 MB
+  Archivo 19: 1251 MB
+  Archivo 20: 1251 MB
+  Archivo 21: 1251 MB
+  Archivo 22: 1251 MB
+  Archivo 23: 1796 MB
+  Archivo 24: 1796 MB
+  Archivo 25: 1796 MB
+  Archivo 26: 1796 MB
+  Archivo 27: 1796 MB
+  Archivo 28: 1796 MB
+  Archivo 29: 1796 MB
+  Archivo 30: 1796 MB
+  Archivo 31: 1796 MB
+  Archivo 32: 2051 MB
+  Archivo 33: 2051 MB
+  Archivo 34: 2051 MB
+  Archivo 35: 2051 MB
+  Archivo 36: 2051 MB
+  Archivo 37: 2051 MB
+  Archivo 38: 2051 MB
+  Archivo 39: 2051 MB
+  Archivo 40: 2051 MB
+  Archivo 41: 2051 MB
+  Archivo 42: 2051 MB
+  Archivo 43: 2051 MB
+  Archivo 44: 2051 MB
+  Archivo 45: 2051 MB
+  Archivo 46: 2076 MB
+  Archivo 47: 2076 MB
+  Archivo 48: 2076 MB
+  Archivo 49: 2076 MB
+  Archivo 50: 2076 MB
+  Archivo 51: 2076 MB
+  Archivo 52: 2076 MB
+  Archivo 53: 2076 MB
+  Archivo 54: 2076 MB
+  Archivo 55: 2076 MB
+  Archivo 56: 2076 MB
+  Archivo 57: 4695 MB
+
+Disco 2: 96765 MB
+  Archivo 75: 5908 MB
+  Archivo 79: 5908 MB
+  Archivo 94: 9292 MB
+  Archivo 101: 9886 MB
+  Archivo 111: 9886 MB
+  Archivo 167: 17075 MB
+  Archivo 177: 19244 MB
+  Archivo 192: 19566 MB
+
+Disco 3: 98090 MB
+  Archivo 85: 9292 MB
+  Archivo 86: 9292 MB
+  Archivo 102: 9886 MB
+  Archivo 103: 9886 MB
+  Archivo 105: 9886 MB
+  Archivo 109: 9886 MB
+  Archivo 114: 10359 MB
+  Archivo 122: 10359 MB
+  Archivo 175: 19244 MB
+
+Disco 4: 95511 MB
+  Archivo 77: 5908 MB
+  Archivo 78: 5908 MB
+  Archivo 83: 9292 MB
+  Archivo 84: 9292 MB
+  Archivo 88: 9292 MB
+  Archivo 96: 9292 MB
+  Archivo 104: 9886 MB
+  Archivo 161: 17075 MB
+  Archivo 191: 19566 MB
+
+Disco 5: 96479 MB
+  Archivo 62: 4695 MB
+  Archivo 63: 4695 MB
+  Archivo 64: 4695 MB
+  Archivo 65: 4695 MB
+  Archivo 66: 4695 MB
+  Archivo 67: 4695 MB
+  Archivo 68: 4695 MB
+  Archivo 95: 9292 MB
+  Archivo 149: 15834 MB
+  Archivo 169: 19244 MB
+  Archivo 170: 19244 MB
+
+Disco 6: 93252 MB
+  Archivo 125: 10359 MB
+  Archivo 142: 15834 MB
+  Archivo 144: 15834 MB
+  Archivo 160: 17075 MB
+  Archivo 162: 17075 MB
+  Archivo 163: 17075 MB
+
+Disco 7: 94138 MB
+  Archivo 60: 4695 MB
+  Archivo 73: 5908 MB
+  Archivo 76: 5908 MB
+  Archivo 80: 5908 MB
+  Archivo 141: 15834 MB
+  Archivo 166: 17075 MB
+  Archivo 184: 19244 MB
+  Archivo 187: 19566 MB
+
+Disco 8: 99655 MB
+  Archivo 140: 15834 MB
+  Archivo 143: 15834 MB
+  Archivo 154: 15834 MB
+  Archivo 157: 15834 MB
+  Archivo 168: 17075 MB
+  Archivo 179: 19244 MB
+
+Disco 9: 93610 MB
+  Archivo 58: 4695 MB
+  Archivo 100: 9886 MB
+  Archivo 117: 10359 MB
+  Archivo 137: 14348 MB
+  Archivo 147: 15834 MB
+  Archivo 181: 19244 MB
+  Archivo 183: 19244 MB
+
+Disco 10: 95428 MB
+  Archivo 89: 9292 MB
+  Archivo 90: 9292 MB
+  Archivo 91: 9292 MB
+  Archivo 92: 9292 MB
+  Archivo 98: 9886 MB
+  Archivo 107: 9886 MB
+  Archivo 171: 19244 MB
+  Archivo 172: 19244 MB
+
+Disco 11: 96876 MB
+  Archivo 82: 5908 MB
+  Archivo 108: 9886 MB
+  Archivo 115: 10359 MB
+  Archivo 119: 10359 MB
+  Archivo 133: 14348 MB
+  Archivo 134: 14348 MB
+  Archivo 153: 15834 MB
+  Archivo 156: 15834 MB
+
+Disco 12: 91951 MB
+  Archivo 72: 5908 MB
+  Archivo 116: 10359 MB
+  Archivo 126: 10359 MB
+  Archivo 128: 10359 MB
+  Archivo 145: 15834 MB
+  Archivo 190: 19566 MB
+  Archivo 196: 19566 MB
+
+Disco 13: 90730 MB
+  Archivo 74: 5908 MB
+  Archivo 97: 9886 MB
+  Archivo 131: 10359 MB
+  Archivo 146: 15834 MB
+  Archivo 150: 15834 MB
+  Archivo 158: 15834 MB
+  Archivo 165: 17075 MB
+
+Disco 14: 85283 MB
+  Archivo 70: 4695 MB
+  Archivo 99: 9886 MB
+  Archivo 124: 10359 MB
+  Archivo 129: 10359 MB
+  Archivo 155: 15834 MB
+  Archivo 159: 17075 MB
+  Archivo 164: 17075 MB
+
+Disco 15: 89237 MB
+  Archivo 110: 9886 MB
+  Archivo 120: 10359 MB
+  Archivo 139: 14348 MB
+  Archivo 152: 15834 MB
+  Archivo 174: 19244 MB
+  Archivo 188: 19566 MB
+
+Disco 16: 98766 MB
+  Archivo 106: 9886 MB
+  Archivo 135: 14348 MB
+  Archivo 151: 15834 MB
+  Archivo 189: 19566 MB
+  Archivo 193: 19566 MB
+  Archivo 194: 19566 MB
+
+Disco 17: 94691 MB
+  Archivo 87: 9292 MB
+  Archivo 127: 10359 MB
+  Archivo 130: 10359 MB
+  Archivo 132: 10359 MB
+  Archivo 148: 15834 MB
+  Archivo 176: 19244 MB
+  Archivo 180: 19244 MB
+
+Disco 18: 98222 MB
+  Archivo 112: 9886 MB
+  Archivo 113: 9886 MB
+  Archivo 118: 10359 MB
+  Archivo 121: 10359 MB
+  Archivo 173: 19244 MB
+  Archivo 178: 19244 MB
+  Archivo 182: 19244 MB
+
+Disco 19: 92697 MB
+  Archivo 93: 9292 MB
+  Archivo 123: 10359 MB
+  Archivo 138: 14348 MB
+  Archivo 186: 19566 MB
+  Archivo 197: 19566 MB
+  Archivo 199: 19566 MB
+
+Disco 20: 98625 MB
+  Archivo 59: 4695 MB
+  Archivo 61: 4695 MB
+  Archivo 69: 4695 MB
+  Archivo 71: 5908 MB
+  Archivo 81: 5908 MB
+  Archivo 136: 14348 MB
+  Archivo 185: 19244 MB
+  Archivo 195: 19566 MB
+  Archivo 198: 19566 MB
+

@@ -1,0 +1,74 @@
+Para la configuracion del archivo a_1.txt, 11 discos son suficientes.Discos usados: 11
+
+Disco 1: 9286 MB
+  Archivo 0: 2988 MB
+  Archivo 1: 1638 MB
+  Archivo 2: 1991 MB
+  Archivo 3: 1031 MB
+  Archivo 4: 1638 MB
+
+Disco 2: 9622 MB
+  Archivo 5: 1944 MB
+  Archivo 6: 1113 MB
+  Archivo 7: 1440 MB
+  Archivo 8: 1095 MB
+  Archivo 9: 2877 MB
+  Archivo 14: 1153 MB
+
+Disco 3: 9451 MB
+  Archivo 10: 2988 MB
+  Archivo 11: 1661 MB
+  Archivo 12: 2561 MB
+  Archivo 13: 2241 MB
+
+Disco 4: 9893 MB
+  Archivo 15: 1054 MB
+  Archivo 16: 2613 MB
+  Archivo 17: 2577 MB
+  Archivo 18: 1636 MB
+  Archivo 19: 2013 MB
+
+Disco 5: 9644 MB
+  Archivo 20: 1153 MB
+  Archivo 21: 1238 MB
+  Archivo 22: 2915 MB
+  Archivo 23: 2128 MB
+  Archivo 24: 2210 MB
+
+Disco 6: 9901 MB
+  Archivo 25: 2332 MB
+  Archivo 26: 1855 MB
+  Archivo 27: 2263 MB
+  Archivo 28: 2128 MB
+  Archivo 29: 1323 MB
+
+Disco 7: 8467 MB
+  Archivo 30: 1429 MB
+  Archivo 31: 2825 MB
+  Archivo 32: 1238 MB
+  Archivo 33: 2975 MB
+
+Disco 8: 9812 MB
+  Archivo 34: 2829 MB
+  Archivo 35: 2515 MB
+  Archivo 36: 2613 MB
+  Archivo 38: 1855 MB
+
+Disco 9: 9169 MB
+  Archivo 37: 2059 MB
+  Archivo 39: 2975 MB
+  Archivo 40: 2098 MB
+  Archivo 42: 2037 MB
+
+Disco 10: 9777 MB
+  Archivo 41: 2915 MB
+  Archivo 43: 2729 MB
+  Archivo 44: 2429 MB
+  Archivo 45: 1704 MB
+
+Disco 11: 7779 MB
+  Archivo 46: 1638 MB
+  Archivo 47: 2808 MB
+  Archivo 48: 1697 MB
+  Archivo 49: 1636 MB
+
