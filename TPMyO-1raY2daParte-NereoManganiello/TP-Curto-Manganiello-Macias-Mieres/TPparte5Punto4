@@ -1,0 +1,138 @@
+from pyscipopt import Model, SCIP_PARAMSETTING
+
+# Función para leer los archivos y procesar los conjuntos
+def leer_archivos(archivo_H, archivo_conjuntos):
+    with open(archivo_H, "r") as f:
+        lines = f.read().strip().split("\n")[1:]
+        H = {int(line.split()[0]): int(line.split()[1]) for line in lines}
+
+    with open(archivo_conjuntos, "r") as f:
+        conjuntos = [list(map(int, linea.split("-"))) for linea in f.read().strip().split("\n")[1:]]
+
+    return H, conjuntos
+
+# Resolver el modelo relajado con pyscipopt
+def resolver_modelo_relajado(H, conjuntos):
+    model = Model("Cobertura_Minima")
+    model.setPresolve(SCIP_PARAMSETTING.OFF)
+    model.setHeuristics(SCIP_PARAMSETTING.OFF)
+    model.disablePropagation()
+
+    x = {j: model.addVar(name=f"x_{j}", vtype="C", lb=0.0, ub=1.0) for j in range(len(conjuntos))}
+
+    model.setObjective(
+        sum(x[j] for j in range(len(conjuntos))), sense="minimize"
+    )
+
+    restricciones = {
+        archivo: model.addCons(
+            sum(x[j] for j in range(len(conjuntos)) if archivo in conjuntos[j]) >= 1
+        )
+        for archivo in H
+    }
+
+    model.optimize()
+
+    solucion_relajada = {j: model.getVal(x[j]) for j in range(len(conjuntos))}
+    valor_objetivo = model.getObjVal()
+
+    return model, restricciones, solucion_relajada, valor_objetivo
+
+# Obtener la solución dual
+def obtener_solucion_dual(model, restricciones):
+    return {archivo: model.getDualsolLinear(restriccion) for archivo, restriccion in restricciones.items()}
+
+# Resolver el problema de máxima importancia
+def resolver_maxima_importancia(H, duales, capacidad):
+    model = Model("Maxima_Importancia")
+    y = {f: model.addVar(vtype="B", name=f"y_{f}") for f in H}
+
+    model.addCons(
+        sum(H[f] * y[f] for f in H) <= capacidad, name="capacidad"
+    )
+
+    model.setObjective(
+        sum(duales[f] * y[f] for f in H), sense="maximize"
+    )
+    model.optimize()
+
+    seleccionados = [f for f in H if model.getVal(y[f]) > 0.5]
+    valor_objetivo = model.getObjVal()
+
+    return seleccionados, valor_objetivo
+
+# Resolver el problema de cobertura mínima entera
+def resolver_modelo_entero(H, conjuntos):
+    model = Model("Cobertura_Minima_Entera")
+    x = {j: model.addVar(name=f"x_{j}", vtype="B") for j in range(len(conjuntos))}
+
+    for archivo in H:
+        model.addCons(
+            sum(x[j] for j in range(len(conjuntos)) if archivo in conjuntos[j]) >= 1
+        )
+
+    model.setObjective(
+        sum(x[j] for j in range(len(conjuntos))), sense="minimize"
+    )
+
+    model.optimize()
+
+    solucion_entera = {j: model.getVal(x[j]) for j in range(len(conjuntos))}
+    return solucion_entera
+
+# Flujo principal
+def main(archivo_H, archivo_conjuntos, capacidad):
+    print("Leyendo datos...\n")
+    H, conjuntos = leer_archivos(archivo_H, archivo_conjuntos)
+    
+    iteracion = 1
+    while True:
+        print(f"--- Iteración {iteracion} ---\n")
+        
+        # Resolver el modelo relajado
+        modelo, restricciones, solucion_relajada, valor_objetivo = resolver_modelo_relajado(H, conjuntos)
+        print("Solución relajada (primal):")
+        for j, valor in solucion_relajada.items():
+            print(f"Conjunto {j + 1}: {valor:.4f}")
+        print(f"\nValor objetivo (relajado): {valor_objetivo:.4f}\n")
+        
+        # Obtener solución dual
+        solucion_dual = obtener_solucion_dual(modelo, restricciones)
+        print("Solución dual:")
+        for archivo, valor in solucion_dual.items():
+            print(f"Archivo {archivo}: {valor:.4f}")
+        print()
+        
+        # Resolver problema de máxima importancia
+        seleccionados, valor_max_importancia = resolver_maxima_importancia(H, solucion_dual, capacidad)
+        print("Conjunto de máxima importancia seleccionado:")
+        print(f"Archivos seleccionados: {seleccionados}")
+        print(f"Valor objetivo de máxima importancia: {valor_max_importancia:.4f}\n")
+        
+        # Verificar si se debe agregar un nuevo conjunto
+        if valor_max_importancia <= 1:
+            print("El valor objetivo es menor o igual a 1. No se agrega un nuevo conjunto.\n")
+            break
+        
+        print("El valor objetivo es mayor a 1. Agregando nuevo conjunto...\n")
+        conjuntos.append(seleccionados)
+        iteracion += 1
+    
+    # Resolver modelo entero
+    print("Resolviendo el problema de cobertura mínima con solución entera...\n")
+    solucion_entera = resolver_modelo_entero(H, conjuntos)
+    print("Solución entera:")
+    for j, valor in solucion_entera.items():
+        print(f"Conjunto {j + 1}: {int(valor)}")
+
+    return solucion_entera
+
+# Archivos de entrada
+archivo_H = "H.txt"
+archivo_conjuntos = "Conjuntos.txt"
+
+# Ejemplo de capacidad del disco en MB
+capacidad = 5000  # Capacidad del disco en MB
+
+# Resolver el problema
+solucion_final = main(archivo_H, archivo_conjuntos, capacidad)
