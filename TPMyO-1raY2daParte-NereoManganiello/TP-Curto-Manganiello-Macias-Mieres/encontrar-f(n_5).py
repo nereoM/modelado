@@ -1,6 +1,6 @@
 import os
 from configparser import ConfigParser
-from parte5 import TPparte5
+import TPparte5
 
 
 def cargar_configuracion(archivo_cfg):
@@ -63,7 +63,7 @@ def ejecutar_solver(input_file, threshold):
     """
     Ejecuta el solver en el archivo de entrada dado y verifica si encuentra un óptimo.
     """
-    optimo = TPparte5.resolver_problema(input_file, threshold)
+    optimo = TPparte5.main(input_file, threshold)
     return optimo
 
 
@@ -117,7 +117,7 @@ def busqueda_binaria(in_path, out_path, threshold, archivo_base):
 
 def main():
     # Leer configuración
-    archivo_cfg = os.path.abspath("../archivo.cfg")
+    archivo_cfg = os.path.abspath("archivo.cfg")
     in_path, out_path, threshold = cargar_configuracion(archivo_cfg)
 
     # Archivo base
